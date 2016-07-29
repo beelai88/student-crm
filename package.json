@@ -1,0 +1,23 @@
+{
+  "name": "student-crm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/beelai88/student-crm.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/beelai88/student-crm/issues"
+  },
+  "homepage": "https://github.com/beelai88/student-crm#readme",
+  "dependencies": {
+    "pg": "^6.0.3",
+    "sequelize": "^3.23.6"
+  }
+}
