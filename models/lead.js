@@ -18,21 +18,18 @@ module.exports = db.define('lead', {
 			isEmail: true
 		}
 	},
-	//validator for this
 	phone: {
 		type: Sequelize.STRING,
 		min: 10, 
 		max: 10
 	},
 	location: {
-		type: Sequelize.STRING
+		type: Sequelize.ENUM('New York', 'Chicago')
 	},
 	skillLevel: {
 		type: Sequelize.RANGE(Sequelize.INTEGER)
-		allowNull: false
 	},
 	howHeardAboutUs: {
-		type: Sequelize.STRING,
-		allowNull: false
+		type: Sequelize.ARRAY(Sequelize.STRING)
 	}
 });
